@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "rootDir": "src",
-    "moduleResolution": "Node",
+    "moduleResolution": "node16",
     "module": "commonjs",
     "noImplicitAny": true,
     "target": "es2016",

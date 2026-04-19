@@ -1,6 +1,6 @@
 import dotenv from "dotenv-safe";
 
-dotenv.config({ allowEmptyValues: true, path: `.env.${process.env.NODE_ENV}` }); //allows environment variables to be accessed.
+dotenv.config({ allowEmptyValues: true });
 
 const ENVIRONMENT = process.env.NODE_ENV ?? "development";
 const MONGO_HOST = process.env.MONGO_HOST ?? "";
