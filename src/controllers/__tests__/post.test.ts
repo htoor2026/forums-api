@@ -26,10 +26,7 @@ describe('Post Routes', () => {
       expect(res.status).toBe(200);
       expect(Array.isArray(res.body)).toBe(true);
     });
-  });
 
-  // Extra error-case test to improve branch coverage
-  describe('GET /posts (error)', () => {
     it('should return 500 if Post.find throws', async () => {
       (Post.find as jest.Mock).mockReturnValue({
         sort: jest.fn().mockRejectedValue(new Error('DB error'))
@@ -70,7 +67,10 @@ describe('Post Routes', () => {
 
     it('should create post with valid token', async () => {
       (Post.create as jest.Mock).mockResolvedValue({
-        _id: 'p1', title: 'T', body: 'B', authorId: 'user1'
+        _id: 'p1',
+        title: 'T',
+        body: 'B',
+        authorId: 'user1'
       });
 
       const res = await request(app)
@@ -79,6 +79,17 @@ describe('Post Routes', () => {
         .send({ title: 'T', body: 'B' });
 
       expect(res.status).toBe(201);
+    });
+
+    it('should return 500 if create throws', async () => {
+      (Post.create as jest.Mock).mockRejectedValue(new Error('DB error'));
+
+      const res = await request(app)
+        .post('/posts')
+        .set('Authorization', `Bearer ${userToken}`)
+        .send({ title: 'T', body: 'B' });
+
+      expect(res.status).toBe(500);
     });
   });
 
@@ -133,6 +144,28 @@ describe('Post Routes', () => {
 
       expect(res.status).toBe(200);
     });
+
+    it('should return 404 if post not found', async () => {
+      (Post.findById as jest.Mock).mockResolvedValue(null);
+
+      const res = await request(app)
+        .put('/posts/p1')
+        .set('Authorization', `Bearer ${userToken}`)
+        .send({ title: 'New' });
+
+      expect(res.status).toBe(404);
+    });
+
+    it('should return 500 if update throws', async () => {
+      (Post.findById as jest.Mock).mockRejectedValue(new Error('DB error'));
+
+      const res = await request(app)
+        .put('/posts/p1')
+        .set('Authorization', `Bearer ${userToken}`)
+        .send({ title: 'New' });
+
+      expect(res.status).toBe(500);
+    });
   });
 
   describe('POST /posts/:id/like', () => {
@@ -159,26 +192,15 @@ describe('Post Routes', () => {
       expect(res.status).toBe(200);
       expect(res.body.message).toBe('Post unliked');
     });
+
     it('should return 500 if PostLike.findOne throws', async () => {
       (PostLike.findOne as jest.Mock).mockRejectedValue(new Error('DB error'));
 
-    const res = await request(app)
-      .post('/posts/p1/like')
-      .set('Authorization', `Bearer ${userToken}`);
+      const res = await request(app)
+        .post('/posts/p1/like')
+        .set('Authorization', `Bearer ${userToken}`);
 
-    expect(res.status).toBe(500);
-});
-  });
-});
-describe('POST /posts/:id/like additional error cases', () => {
-  it('should return 500 if PostLike.create throws', async () => {
-    (PostLike.findOne as jest.Mock).mockResolvedValue(null);
-    (PostLike.create as jest.Mock).mockRejectedValue(new Error('DB error'));
-
-    const res = await request(app)
-      .post('/posts/p1/like')
-      .set('Authorization', `Bearer ${userToken}`);
-
-    expect(res.status).toBe(500);
+      expect(res.status).toBe(500);
+    });
   });
 });
