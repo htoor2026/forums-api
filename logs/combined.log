@@ -1,0 +1,164 @@
+[2026-04-15T00:02:03.080Z] INFO: Fetched 0 posts
+[2026-04-15T00:02:03.103Z] ERROR: GET /posts/:id error: Invalid ID
+[2026-04-15T00:03:03.777Z] INFO: Fetched 0 posts
+[2026-04-15T00:03:03.784Z] ERROR: GET /posts/:id error: Invalid ID
+[2026-04-15T00:03:03.792Z] INFO: Post created by user user1
+[2026-04-15T00:03:03.793Z] INFO: Post undefined updated by user user1
+[2026-04-15T00:03:03.796Z] INFO: Post undefined updated by user admin1
+[2026-04-15T00:03:03.798Z] INFO: Post p1 liked by user user1
+[2026-04-15T00:03:03.800Z] INFO: Post p1 unliked by user user1
+[2026-04-15T00:03:03.805Z] INFO: Admin stats fetched
+[2026-04-15T00:03:43.556Z] INFO: Fetched 0 posts
+[2026-04-15T00:03:43.571Z] ERROR: GET /posts/:id error: Invalid ID
+[2026-04-15T00:03:43.598Z] INFO: Post created by user user1
+[2026-04-15T00:03:43.601Z] INFO: Post undefined updated by user user1
+[2026-04-15T00:03:43.617Z] INFO: Post undefined updated by user admin1
+[2026-04-15T00:03:43.619Z] INFO: Post p1 liked by user user1
+[2026-04-15T00:03:43.620Z] INFO: Post p1 unliked by user user1
+[2026-04-15T00:03:43.686Z] INFO: Admin stats fetched
+[2026-04-15T00:03:43.880Z] INFO: Comment created on post post1
+[2026-04-15T00:03:43.882Z] INFO: Comment c1 updated
+[2026-04-15T00:03:43.885Z] INFO: Comment c1 updated
+[2026-04-15T00:03:43.888Z] INFO: Comment c1 deleted
+[2026-04-19T14:49:14.346Z] ERROR: POST comment error: Comment validation failed: postId: Path `postId` is required.
+[2026-04-19T14:49:14.353Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:49:14.360Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:49:14.366Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:49:14.416Z] INFO: Admin stats fetched
+[2026-04-19T14:52:35.078Z] INFO: Comment created on post post1
+[2026-04-19T14:52:35.083Z] INFO: Comment c1 updated
+[2026-04-19T14:52:35.088Z] INFO: Comment c1 updated
+[2026-04-19T14:52:35.093Z] INFO: Comment c1 deleted
+[2026-04-19T14:52:35.217Z] ERROR: POST comment error: Comment validation failed: postId: Path `postId` is required.
+[2026-04-19T14:52:35.222Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:35.227Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:35.233Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:35.315Z] INFO: Admin stats fetched
+[2026-04-19T14:52:43.512Z] INFO: Comment created on post post1
+[2026-04-19T14:52:43.517Z] INFO: Comment c1 updated
+[2026-04-19T14:52:43.520Z] ERROR: POST comment error: Comment validation failed: postId: Path `postId` is required.
+[2026-04-19T14:52:43.526Z] INFO: Comment c1 updated
+[2026-04-19T14:52:43.529Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:43.532Z] INFO: Comment c1 deleted
+[2026-04-19T14:52:43.540Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:43.546Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:43.608Z] INFO: Admin stats fetched
+[2026-04-19T14:53:08.983Z] INFO: Comment created on post post1
+[2026-04-19T14:53:08.986Z] INFO: Comment c1 updated
+[2026-04-19T14:53:08.991Z] INFO: Comment c1 updated
+[2026-04-19T14:53:08.997Z] INFO: Comment c1 deleted
+[2026-04-19T14:53:09.163Z] INFO: Admin stats fetched
+[2026-04-19T14:54:30.284Z] INFO: Comment created on post post1
+[2026-04-19T14:54:30.288Z] INFO: Comment c1 updated
+[2026-04-19T14:54:30.293Z] INFO: Comment c1 updated
+[2026-04-19T14:54:30.296Z] INFO: Comment c1 deleted
+[2026-04-19T14:54:30.493Z] INFO: Admin stats fetched
+[2026-04-19T15:05:41.863Z] INFO: Comment created on post post1
+[2026-04-19T15:05:41.865Z] INFO: Comment c1 updated
+[2026-04-19T15:05:41.870Z] INFO: Comment c1 updated
+[2026-04-19T15:05:41.874Z] INFO: Comment c1 deleted
+[2026-04-19T15:05:41.979Z] INFO: Admin stats fetched
+[2026-04-19T15:14:50.642Z] INFO: Comment created on post post1
+[2026-04-19T15:14:50.647Z] INFO: Comment c1 updated
+[2026-04-19T15:14:50.652Z] INFO: Comment c1 updated
+[2026-04-19T15:14:50.660Z] INFO: Comment c1 deleted
+[2026-04-19T15:14:50.786Z] INFO: Admin stats fetched
+[2026-04-19T15:15:46.247Z] INFO: Comment created on post post1
+[2026-04-19T15:15:46.251Z] INFO: Comment c1 updated
+[2026-04-19T15:15:46.255Z] INFO: Comment c1 updated
+[2026-04-19T15:15:46.259Z] INFO: Comment c1 deleted
+[2026-04-19T15:15:46.402Z] INFO: Admin stats fetched
+[2026-04-19T15:17:27.828Z] INFO: Comment created on post post1
+[2026-04-19T15:17:27.832Z] INFO: Comment c1 updated
+[2026-04-19T15:17:27.840Z] INFO: Comment c1 updated
+[2026-04-19T15:17:27.848Z] INFO: Comment c1 deleted
+[2026-04-19T15:17:27.957Z] INFO: Admin stats fetched
+[2026-04-19T15:18:36.795Z] INFO: Comment created on post post1
+[2026-04-19T15:18:36.801Z] INFO: Comment c1 updated
+[2026-04-19T15:18:36.805Z] INFO: Comment c1 updated
+[2026-04-19T15:18:36.814Z] INFO: Comment c1 deleted
+[2026-04-19T15:18:36.948Z] INFO: Admin stats fetched
+[2026-04-19T15:20:12.826Z] INFO: Comment created on post post1
+[2026-04-19T15:20:12.829Z] INFO: Comment c1 updated
+[2026-04-19T15:20:12.834Z] INFO: Comment c1 updated
+[2026-04-19T15:20:12.840Z] INFO: Comment c1 deleted
+[2026-04-19T15:20:13.002Z] INFO: Admin stats fetched
+[2026-04-19T15:21:10.352Z] INFO: Comment created on post post1
+[2026-04-19T15:21:10.355Z] INFO: Comment c1 updated
+[2026-04-19T15:21:10.359Z] INFO: Comment c1 updated
+[2026-04-19T15:21:10.368Z] INFO: Comment c1 deleted
+[2026-04-19T15:21:10.509Z] INFO: Admin stats fetched
+[2026-04-19T15:29:34.177Z] INFO: Comment created on post post1
+[2026-04-19T15:29:34.181Z] INFO: Comment c1 updated
+[2026-04-19T15:29:34.186Z] INFO: Comment c1 updated
+[2026-04-19T15:29:34.190Z] INFO: Comment c1 deleted
+[2026-04-19T15:29:34.349Z] INFO: Admin stats fetched
+[2026-04-19T15:30:24.453Z] INFO: Comment created on post post1
+[2026-04-19T15:30:24.455Z] INFO: Comment c1 updated
+[2026-04-19T15:30:24.459Z] INFO: Comment c1 updated
+[2026-04-19T15:30:24.464Z] INFO: Comment c1 deleted
+[2026-04-19T15:30:24.587Z] INFO: Admin stats fetched
+[2026-04-19T15:32:37.806Z] INFO: Comment created on post post1
+[2026-04-19T15:32:37.811Z] INFO: Comment c1 updated
+[2026-04-19T15:32:37.819Z] INFO: Comment c1 updated
+[2026-04-19T15:32:37.824Z] INFO: Comment c1 deleted
+[2026-04-19T15:32:37.954Z] INFO: Admin stats fetched
+[2026-04-19T15:33:44.461Z] INFO: Comment created on post post1
+[2026-04-19T15:33:44.465Z] INFO: Comment c1 updated
+[2026-04-19T15:33:44.470Z] INFO: Comment c1 updated
+[2026-04-19T15:33:44.476Z] INFO: Comment c1 deleted
+[2026-04-19T15:33:44.599Z] INFO: Admin stats fetched
+[2026-04-19T15:34:48.151Z] INFO: Comment created on post post1
+[2026-04-19T15:34:48.157Z] INFO: Comment c1 updated
+[2026-04-19T15:34:48.161Z] INFO: Comment c1 updated
+[2026-04-19T15:34:48.165Z] INFO: Comment c1 deleted
+[2026-04-19T15:34:48.278Z] INFO: Admin stats fetched
+[2026-04-19T15:36:23.393Z] INFO: Comment created on post post1
+[2026-04-19T15:36:23.401Z] INFO: Comment c1 updated
+[2026-04-19T15:36:23.409Z] INFO: Comment c1 updated
+[2026-04-19T15:36:23.418Z] INFO: Comment c1 deleted
+[2026-04-19T15:36:23.547Z] INFO: Admin stats fetched
+[2026-04-19T15:38:34.296Z] INFO: Comment created on post post1
+[2026-04-19T15:38:34.298Z] INFO: Comment c1 updated
+[2026-04-19T15:38:34.303Z] INFO: Comment c1 updated
+[2026-04-19T15:38:34.311Z] INFO: Comment c1 deleted
+[2026-04-19T15:38:34.414Z] INFO: Admin stats fetched
+[2026-04-19T15:38:50.072Z] INFO: Comment created on post post1
+[2026-04-19T15:38:50.075Z] INFO: Comment c1 updated
+[2026-04-19T15:38:50.078Z] INFO: Comment c1 updated
+[2026-04-19T15:38:50.083Z] INFO: Comment c1 deleted
+[2026-04-19T15:38:50.255Z] INFO: Admin stats fetched
+[2026-04-19T15:45:02.657Z] INFO: Comment created on post post1
+[2026-04-19T15:45:02.662Z] INFO: Comment c1 updated
+[2026-04-19T15:45:02.668Z] INFO: Comment c1 updated
+[2026-04-19T15:45:02.674Z] INFO: Comment c1 deleted
+[2026-04-19T15:45:02.787Z] INFO: Admin stats fetched
+[2026-04-19T16:06:39.483Z] INFO: Comment created on post post1
+[2026-04-19T16:06:39.488Z] INFO: Comment c1 updated
+[2026-04-19T16:06:39.494Z] INFO: Comment c1 updated
+[2026-04-19T16:06:39.499Z] INFO: Comment c1 deleted
+[2026-04-19T16:06:39.599Z] INFO: Admin stats fetched
+[2026-04-19T17:23:06.245Z] ERROR: GET comments error: DB error
+[2026-04-19T17:23:06.257Z] INFO: Comment created on post post1
+[2026-04-19T17:23:06.261Z] INFO: Comment c1 updated
+[2026-04-19T17:23:06.265Z] INFO: Comment c1 updated
+[2026-04-19T17:23:06.269Z] INFO: Comment c1 deleted
+[2026-04-19T17:23:06.367Z] INFO: Admin stats fetched
+[2026-04-20T01:50:50.956Z] ERROR: GET comments error: DB error
+[2026-04-20T01:50:50.958Z] INFO: Admin stats fetched
+[2026-04-20T01:50:50.967Z] INFO: Comment created on post post1
+[2026-04-20T01:50:50.969Z] INFO: Comment c1 updated
+[2026-04-20T01:50:50.975Z] INFO: Comment c1 updated
+[2026-04-20T01:50:50.979Z] INFO: Comment c1 deleted
+[2026-04-20T02:18:24.186Z] ERROR: GET comments error: DB error
+[2026-04-20T02:18:24.194Z] INFO: Comment created on post post1
+[2026-04-20T02:18:24.196Z] INFO: Comment c1 updated
+[2026-04-20T02:18:24.201Z] INFO: Comment c1 updated
+[2026-04-20T02:18:24.204Z] INFO: Comment c1 deleted
+[2026-04-20T02:18:24.257Z] INFO: Admin stats fetched
+[2026-04-20T02:20:18.628Z] ERROR: GET comments error: DB error
+[2026-04-20T02:20:18.638Z] INFO: Comment created on post post1
+[2026-04-20T02:20:18.640Z] INFO: Comment c1 updated
+[2026-04-20T02:20:18.643Z] INFO: Comment c1 updated
+[2026-04-20T02:20:18.647Z] INFO: Comment c1 deleted
+[2026-04-20T02:20:18.723Z] INFO: Admin stats fetched

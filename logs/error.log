@@ -1,0 +1,19 @@
+[2026-04-15T00:02:03.103Z] ERROR: GET /posts/:id error: Invalid ID
+[2026-04-15T00:03:03.784Z] ERROR: GET /posts/:id error: Invalid ID
+[2026-04-15T00:03:43.571Z] ERROR: GET /posts/:id error: Invalid ID
+[2026-04-19T14:49:14.346Z] ERROR: POST comment error: Comment validation failed: postId: Path `postId` is required.
+[2026-04-19T14:49:14.353Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:49:14.360Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:49:14.366Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:35.217Z] ERROR: POST comment error: Comment validation failed: postId: Path `postId` is required.
+[2026-04-19T14:52:35.222Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:35.227Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:35.233Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:43.520Z] ERROR: POST comment error: Comment validation failed: postId: Path `postId` is required.
+[2026-04-19T14:52:43.529Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:43.540Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T14:52:43.546Z] ERROR: PUT comment error: Cast to ObjectId failed for value "p1" (type string) at path "_id" for model "Comment"
+[2026-04-19T17:23:06.245Z] ERROR: GET comments error: DB error
+[2026-04-20T01:50:50.956Z] ERROR: GET comments error: DB error
+[2026-04-20T02:18:24.186Z] ERROR: GET comments error: DB error
+[2026-04-20T02:20:18.628Z] ERROR: GET comments error: DB error
