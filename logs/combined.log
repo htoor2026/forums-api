@@ -162,3 +162,15 @@
 [2026-04-20T02:20:18.643Z] INFO: Comment c1 updated
 [2026-04-20T02:20:18.647Z] INFO: Comment c1 deleted
 [2026-04-20T02:20:18.723Z] INFO: Admin stats fetched
+[2026-04-20T19:01:59.054Z] ERROR: GET comments error: DB error
+[2026-04-20T19:01:59.081Z] INFO: Comment created on post post1
+[2026-04-20T19:01:59.086Z] INFO: Comment c1 updated
+[2026-04-20T19:01:59.093Z] INFO: Comment c1 updated
+[2026-04-20T19:01:59.098Z] INFO: Comment c1 deleted
+[2026-04-20T19:01:59.209Z] INFO: Admin stats fetched
+[2026-04-20T22:12:01.496Z] INFO: Admin stats fetched
+[2026-04-20T22:12:01.502Z] ERROR: GET comments error: DB error
+[2026-04-20T22:12:01.513Z] INFO: Comment created on post post1
+[2026-04-20T22:12:01.517Z] INFO: Comment c1 updated
+[2026-04-20T22:12:01.526Z] INFO: Comment c1 updated
+[2026-04-20T22:12:01.530Z] INFO: Comment c1 deleted
