@@ -8,7 +8,7 @@ import logger from "../../../config/logger";
 
 const router = express.Router();
 
-// GET /admin/stats — site analytics (admin only)
+
 router.get("/stats", authenticate, requireAdmin, async (_req: AuthRequest, res: Response) => {
   try {
     const [totalUsers, totalPosts, totalComments, totalLikes] = await Promise.all([
@@ -26,7 +26,7 @@ router.get("/stats", authenticate, requireAdmin, async (_req: AuthRequest, res: 
   }
 });
 
-// GET /admin/users — list all users (admin only)
+
 router.get("/users", authenticate, requireAdmin, async (_req: AuthRequest, res: Response) => {
   try {
     const users = await User.find({}, { passwordHash: 0 }).sort({ createdAt: -1 });

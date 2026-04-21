@@ -3,6 +3,9 @@ import { Post } from "../../../infrastructure/mongodb/models/post";
 import { PostLike } from "../../../infrastructure/mongodb/models/postLike";
 import { authenticate, AuthRequest } from "../../../middleware/authMiddleware";
 import commentRouter from "./comment";
+import { canModifyPost, toggleLike } from "../../services/forumService";
+
+
 
 const router = express.Router();
 
@@ -27,7 +30,7 @@ router.get("/:id", async (req: Request, res: Response) => {
   }
 });
 
-// POST create post (protected)
+// POST create post 
 router.post("/", authenticate, async (req: AuthRequest, res: Response) => {
   try {
     const post = await Post.create({
@@ -41,7 +44,7 @@ router.post("/", authenticate, async (req: AuthRequest, res: Response) => {
   }
 });
 
-// PUT edit post (protected)
+// PUT edit post 
 router.put("/:id", authenticate, async (req: AuthRequest, res: Response) => {
   try {
     const post = await Post.findById(req.params.id);
@@ -60,7 +63,7 @@ router.put("/:id", authenticate, async (req: AuthRequest, res: Response) => {
   }
 });
 
-// POST like/unlike post (protected)
+// POST like/unlike post 
 router.post("/:id/like", authenticate, async (req: AuthRequest, res: Response) => {
   try {
     const existing = await PostLike.findOne({ postId: req.params.id, userId: req.user!.id });

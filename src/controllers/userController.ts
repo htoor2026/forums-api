@@ -1,0 +1,1 @@
+export { default as userRouter } from "../ports/rest/routes/user";

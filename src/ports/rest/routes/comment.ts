@@ -16,7 +16,7 @@ router.get("/", async (req: Request<{ postId: string }>, res: Response) => {
   }
 });
 
-// POST create comment (protected)
+
 router.post("/", authenticate, async (req: AuthRequest, res: Response, _next: NextFunction) => {
   try {
     const comment = await Comment.create({
@@ -52,7 +52,7 @@ router.put("/:commentId", authenticate, async (req: AuthRequest, res: Response) 
   }
 });
 
-// DELETE comment (protected)
+// DELETE comment 
 router.delete("/:commentId", authenticate, async (req: AuthRequest, res: Response) => {
   try {
     const comment = await Comment.findById(req.params.commentId);

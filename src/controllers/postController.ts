@@ -1,0 +1,1 @@
+export { default as postRouter } from "../ports/rest/routes/post";

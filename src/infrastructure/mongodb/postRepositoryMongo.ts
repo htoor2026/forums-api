@@ -60,7 +60,7 @@ export class PostRepositoryMongo implements IPostRepository {
       }).save();
     } catch (err: any) {
       if (err.code === 11000) {
-        // duplicate like – ignore
+      
         return;
       }
       throw err;
