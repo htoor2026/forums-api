@@ -3,7 +3,7 @@ import { Post } from "../../../infrastructure/mongodb/models/post";
 import { PostLike } from "../../../infrastructure/mongodb/models/postLike";
 import { authenticate, AuthRequest } from "../../../middleware/authMiddleware";
 import commentRouter from "./comment";
-import { canModifyPost, toggleLike } from "../../services/forumService";
+import { canModifyPost, toggleLike } from "../../../services/forumService";
 
 
 

@@ -20,7 +20,6 @@ const postLike_1 = require("../../../infrastructure/mongodb/models/postLike");
 const authMiddleware_1 = require("../../../middleware/authMiddleware");
 const logger_1 = __importDefault(require("../../../config/logger"));
 const router = express_1.default.Router();
-// GET /admin/stats — site analytics (admin only)
 router.get("/stats", authMiddleware_1.authenticate, authMiddleware_1.requireAdmin, (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const [totalUsers, totalPosts, totalComments, totalLikes] = yield Promise.all([
@@ -37,7 +36,6 @@ router.get("/stats", authMiddleware_1.authenticate, authMiddleware_1.requireAdmi
         res.status(500).json({ message: error.message });
     }
 }));
-// GET /admin/users — list all users (admin only)
 router.get("/users", authMiddleware_1.authenticate, authMiddleware_1.requireAdmin, (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const users = yield user_1.User.find({}, { passwordHash: 0 }).sort({ createdAt: -1 });

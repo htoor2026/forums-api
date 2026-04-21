@@ -73,7 +73,6 @@ class PostRepositoryMongo {
             }
             catch (err) {
                 if (err.code === 11000) {
-                    // duplicate like – ignore
                     return;
                 }
                 throw err;

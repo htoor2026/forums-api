@@ -42,7 +42,7 @@ router.get("/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         res.status(500).json({ message: error.message });
     }
 }));
-// POST create post (protected)
+// POST create post 
 router.post("/", authMiddleware_1.authenticate, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const post = yield post_1.Post.create({
@@ -56,7 +56,7 @@ router.post("/", authMiddleware_1.authenticate, (req, res) => __awaiter(void 0, 
         res.status(500).json({ message: error.message });
     }
 }));
-// PUT edit post (protected)
+// PUT edit post 
 router.put("/:id", authMiddleware_1.authenticate, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     var _a, _b;
     try {
@@ -78,7 +78,7 @@ router.put("/:id", authMiddleware_1.authenticate, (req, res) => __awaiter(void 0
         res.status(500).json({ message: error.message });
     }
 }));
-// POST like/unlike post (protected)
+// POST like/unlike post 
 router.post("/:id/like", authMiddleware_1.authenticate, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const existing = yield postLike_1.PostLike.findOne({ postId: req.params.id, userId: req.user.id });

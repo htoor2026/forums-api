@@ -28,7 +28,6 @@ router.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         res.status(500).json({ message: error.message });
     }
 }));
-// POST create comment (protected)
 router.post("/", authMiddleware_1.authenticate, (req, res, _next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const comment = yield comment_1.Comment.create({
@@ -67,7 +66,7 @@ router.put("/:commentId", authMiddleware_1.authenticate, (req, res) => __awaiter
         res.status(500).json({ message: error.message });
     }
 }));
-// DELETE comment (protected)
+// DELETE comment 
 router.delete("/:commentId", authMiddleware_1.authenticate, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const comment = yield comment_1.Comment.findById(req.params.commentId);

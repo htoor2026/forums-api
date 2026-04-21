@@ -6,8 +6,8 @@ import {
   toggleLike,
 } from "./forumService";
 
-describe("forumService business rules", () => {
-  test("admin can modify any post", () => {
+describe("forumService business logic", () => {
+  test("admin (super user) can modify any post", () => {
     expect(canModifyPost("user1", "admin", "owner1")).toBe(true);
   });
 
@@ -15,7 +15,7 @@ describe("forumService business rules", () => {
     expect(canModifyPost("owner1", "user", "owner1")).toBe(true);
   });
 
-  test("non-owner user cannot modify others' post", () => {
+  test("normal user cannot modify another user's post", () => {
     expect(canModifyPost("user1", "user", "owner1")).toBe(false);
   });
 
@@ -27,11 +27,11 @@ describe("forumService business rules", () => {
     expect(canModifyComment("owner1", "user", "owner1")).toBe(true);
   });
 
-  test("non-owner user cannot modify others' comment", () => {
+  test("normal user cannot modify another user's comment", () => {
     expect(canModifyComment("user1", "user", "owner1")).toBe(false);
   });
 
-  test("toggleLike returns like when not liked", () => {
+  test("toggleLike returns like when not previously liked", () => {
     expect(toggleLike(false)).toBe("like");
   });
 

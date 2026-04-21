@@ -17,9 +17,6 @@ const ConnectToDb = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield (0, mongoose_1.connect)(mongoDb);
         console.log('Connected to database successfully');
-        // connection(mongoDb).then(() => {
-        //   console.log('Connected to database successfully');
-        // })
     }
     catch (err) {
         console.log('Disconnect');
