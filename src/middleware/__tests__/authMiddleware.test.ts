@@ -85,6 +85,36 @@ describe('authenticate middleware', () => {
     expect(req.user).toEqual({ id: 'user1', role: 'user' });
     expect(next).toHaveBeenCalled();
   });
+
+  it('should return 401 when JWT_SECRET is missing', () => {
+    const oldSecret = process.env.JWT_SECRET;
+    delete process.env.JWT_SECRET;
+
+    const token = jwt.sign(
+      { sub: 'user1', role: 'user' },
+      'test-secret',
+      { expiresIn: '1h' }
+    );
+
+    const req = {
+      headers: { authorization: `Bearer ${token}` }
+    } as AuthRequest;
+
+    const res = {
+      status: jest.fn().mockReturnThis(),
+      json: jest.fn()
+    } as unknown as Response;
+
+    const next = jest.fn() as NextFunction;
+
+    authenticate(req, res, next);
+
+    expect(res.status).toHaveBeenCalledWith(401);
+    expect(res.json).toHaveBeenCalledWith({ message: 'Invalid or expired token' });
+    expect(next).not.toHaveBeenCalled();
+
+    process.env.JWT_SECRET = oldSecret;
+  });
 });
 
 describe('requireAdmin middleware', () => {
@@ -119,64 +149,4 @@ describe('requireAdmin middleware', () => {
 
     expect(next).toHaveBeenCalled();
   });
-});
-
-it('should return 401 when JWT_SECRET is missing', () => {
-  const oldSecret = process.env.JWT_SECRET;
-  delete process.env.JWT_SECRET;
-
-  const token = jwt.sign(
-    { sub: 'user1', role: 'user' },
-    'test-secret',
-    { expiresIn: '1h' }
-  );
-
-  const req = {
-    headers: { authorization: `Bearer ${token}` }
-  } as AuthRequest;
-
-  const res = {
-    status: jest.fn().mockReturnThis(),
-    json: jest.fn()
-  } as unknown as Response;
-
-  const next = jest.fn() as NextFunction;
-
-  authenticate(req, res, next);
-
-  expect(res.status).toHaveBeenCalledWith(401);
-  expect(res.json).toHaveBeenCalledWith({ message: 'Invalid or expired token' });
-  expect(next).not.toHaveBeenCalled();
-
-  process.env.JWT_SECRET = oldSecret;
-});
-
-it('should return 401 when JWT_SECRET is missing', () => {
-  const oldSecret = process.env.JWT_SECRET;
-  delete process.env.JWT_SECRET;
-
-  const token = jwt.sign(
-    { sub: 'user1', role: 'user' },
-    'test-secret',
-    { expiresIn: '1h' }
-  );
-
-  const req = {
-    headers: { authorization: `Bearer ${token}` }
-  } as AuthRequest;
-
-  const res = {
-    status: jest.fn().mockReturnThis(),
-    json: jest.fn()
-  } as unknown as Response;
-
-  const next = jest.fn() as NextFunction;
-
-  authenticate(req, res, next);
-
-  expect(res.status).toHaveBeenCalledWith(401);
-  expect(res.json).toHaveBeenCalledWith({ message: 'Invalid or expired token' });
-  expect(next).not.toHaveBeenCalled();
-
-  process.env.JWT_SECRET = oldSecret;
 });

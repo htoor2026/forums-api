@@ -174,3 +174,123 @@
 [2026-04-20T22:12:01.517Z] INFO: Comment c1 updated
 [2026-04-20T22:12:01.526Z] INFO: Comment c1 updated
 [2026-04-20T22:12:01.530Z] INFO: Comment c1 deleted
+[2026-04-20T23:00:20.194Z] INFO: Admin stats fetched
+[2026-04-20T23:00:20.203Z] ERROR: GET comments error: DB error
+[2026-04-20T23:00:20.213Z] INFO: Comment created on post post1
+[2026-04-20T23:00:20.215Z] INFO: Comment c1 updated
+[2026-04-20T23:00:20.218Z] INFO: Comment c1 updated
+[2026-04-20T23:00:20.222Z] INFO: Comment c1 deleted
+[2026-04-20T23:16:54.399Z] INFO: Admin stats fetched
+[2026-04-20T23:16:54.406Z] ERROR: GET comments error: DB error
+[2026-04-20T23:16:54.416Z] INFO: Comment created on post post1
+[2026-04-20T23:16:54.418Z] INFO: Comment c1 updated
+[2026-04-20T23:16:54.422Z] INFO: Comment c1 updated
+[2026-04-20T23:16:54.428Z] INFO: Comment c1 deleted
+[2026-04-20T23:17:34.397Z] ERROR: GET comments error: DB error
+[2026-04-20T23:17:34.406Z] INFO: Comment created on post post1
+[2026-04-20T23:17:34.410Z] INFO: Comment c1 updated
+[2026-04-20T23:17:34.420Z] INFO: Comment c1 updated
+[2026-04-20T23:17:34.424Z] INFO: Comment c1 deleted
+[2026-04-20T23:17:34.540Z] INFO: Admin stats fetched
+[2026-04-20T23:21:23.404Z] ERROR: GET comments error: DB error
+[2026-04-20T23:21:23.411Z] INFO: Comment created on post post1
+[2026-04-20T23:21:23.413Z] INFO: Comment c1 updated
+[2026-04-20T23:21:23.416Z] INFO: Comment c1 updated
+[2026-04-20T23:21:23.418Z] INFO: Comment c1 deleted
+[2026-04-20T23:21:23.635Z] INFO: Admin stats fetched
+[2026-04-20T23:23:19.389Z] INFO: Admin stats fetched
+[2026-04-20T23:23:19.399Z] ERROR: GET comments error: DB error
+[2026-04-20T23:23:19.414Z] INFO: Comment created on post post1
+[2026-04-20T23:23:19.417Z] INFO: Comment c1 updated
+[2026-04-20T23:23:19.420Z] INFO: Comment c1 updated
+[2026-04-20T23:23:19.423Z] INFO: Comment c1 deleted
+[2026-04-20T23:25:46.967Z] INFO: Admin stats fetched
+[2026-04-20T23:25:46.973Z] ERROR: GET comments error: DB error
+[2026-04-20T23:25:46.981Z] INFO: Comment created on post post1
+[2026-04-20T23:25:46.983Z] INFO: Comment c1 updated
+[2026-04-20T23:25:46.986Z] INFO: Comment c1 updated
+[2026-04-20T23:25:46.993Z] INFO: Comment c1 deleted
+[2026-04-20T23:29:49.306Z] INFO: Admin stats fetched
+[2026-04-20T23:29:49.309Z] ERROR: GET comments error: DB error
+[2026-04-20T23:29:49.320Z] INFO: Comment created on post post1
+[2026-04-20T23:29:49.322Z] INFO: Comment c1 updated
+[2026-04-20T23:29:49.327Z] INFO: Comment c1 updated
+[2026-04-20T23:29:49.334Z] INFO: Comment c1 deleted
+[2026-04-20T23:32:23.664Z] INFO: Admin stats fetched
+[2026-04-20T23:32:23.668Z] ERROR: GET comments error: DB error
+[2026-04-20T23:32:23.678Z] INFO: Comment created on post post1
+[2026-04-20T23:32:23.680Z] INFO: Comment c1 updated
+[2026-04-20T23:32:23.686Z] INFO: Comment c1 updated
+[2026-04-20T23:32:23.695Z] INFO: Comment c1 deleted
+[2026-04-20T23:34:44.560Z] ERROR: GET comments error: DB error
+[2026-04-20T23:34:44.572Z] INFO: Comment created on post post1
+[2026-04-20T23:34:44.574Z] INFO: Comment c1 updated
+[2026-04-20T23:34:44.578Z] INFO: Comment c1 updated
+[2026-04-20T23:34:44.583Z] INFO: Comment c1 deleted
+[2026-04-20T23:34:44.764Z] INFO: Admin stats fetched
+[2026-04-20T23:36:19.387Z] ERROR: GET comments error: DB error
+[2026-04-20T23:36:19.401Z] INFO: Comment created on post post1
+[2026-04-20T23:36:19.403Z] INFO: Comment c1 updated
+[2026-04-20T23:36:19.406Z] INFO: Comment c1 updated
+[2026-04-20T23:36:19.412Z] INFO: Comment c1 deleted
+[2026-04-20T23:36:19.570Z] INFO: Admin stats fetched
+[2026-04-20T23:43:15.029Z] INFO: Admin stats fetched
+[2026-04-20T23:43:15.042Z] ERROR: GET comments error: DB error
+[2026-04-20T23:43:15.052Z] INFO: Comment created on post post1
+[2026-04-20T23:43:15.055Z] INFO: Comment c1 updated
+[2026-04-20T23:43:15.062Z] INFO: Comment c1 updated
+[2026-04-20T23:43:15.066Z] INFO: Comment c1 deleted
+[2026-04-20T23:43:50.778Z] INFO: Admin stats fetched
+[2026-04-20T23:43:50.790Z] ERROR: GET comments error: DB error
+[2026-04-20T23:43:50.801Z] INFO: Comment created on post post1
+[2026-04-20T23:43:50.804Z] INFO: Comment c1 updated
+[2026-04-20T23:43:50.809Z] INFO: Comment c1 updated
+[2026-04-20T23:43:50.812Z] INFO: Comment c1 deleted
+[2026-04-20T23:57:48.036Z] INFO: Admin stats fetched
+[2026-04-20T23:57:48.046Z] ERROR: GET comments error: DB error
+[2026-04-20T23:57:48.055Z] INFO: Comment created on post post1
+[2026-04-20T23:57:48.058Z] INFO: Comment c1 updated
+[2026-04-20T23:57:48.063Z] INFO: Comment c1 updated
+[2026-04-20T23:57:48.069Z] INFO: Comment c1 deleted
+[2026-04-21T01:09:25.327Z] INFO: Admin stats fetched
+[2026-04-21T01:09:25.335Z] ERROR: GET comments error: DB error
+[2026-04-21T01:09:25.348Z] INFO: Comment created on post post1
+[2026-04-21T01:09:25.351Z] INFO: Comment c1 updated
+[2026-04-21T01:09:25.356Z] INFO: Comment c1 updated
+[2026-04-21T01:09:25.361Z] INFO: Comment c1 deleted
+[2026-04-21T01:20:36.409Z] INFO: Admin stats fetched
+[2026-04-21T01:20:36.415Z] ERROR: GET comments error: DB error
+[2026-04-21T01:20:36.427Z] INFO: Comment created on post post1
+[2026-04-21T01:20:36.428Z] INFO: Comment c1 updated
+[2026-04-21T01:20:36.431Z] INFO: Comment c1 updated
+[2026-04-21T01:20:36.434Z] INFO: Comment c1 deleted
+[2026-04-21T01:28:57.553Z] INFO: Admin stats fetched
+[2026-04-21T01:28:57.561Z] ERROR: GET comments error: DB error
+[2026-04-21T01:28:57.572Z] INFO: Comment created on post post1
+[2026-04-21T01:28:57.573Z] INFO: Comment c1 updated
+[2026-04-21T01:28:57.576Z] INFO: Comment c1 updated
+[2026-04-21T01:28:57.579Z] INFO: Comment c1 deleted
+[2026-04-21T01:29:14.169Z] ERROR: GET comments error: DB error
+[2026-04-21T01:29:14.178Z] INFO: Comment created on post post1
+[2026-04-21T01:29:14.180Z] INFO: Comment c1 updated
+[2026-04-21T01:29:14.184Z] INFO: Comment c1 updated
+[2026-04-21T01:29:14.193Z] INFO: Comment c1 deleted
+[2026-04-21T01:29:14.307Z] INFO: Admin stats fetched
+[2026-04-21T01:30:02.961Z] ERROR: GET comments error: DB error
+[2026-04-21T01:30:02.975Z] INFO: Comment created on post post1
+[2026-04-21T01:30:02.978Z] INFO: Comment c1 updated
+[2026-04-21T01:30:02.981Z] INFO: Comment c1 updated
+[2026-04-21T01:30:02.985Z] INFO: Comment c1 deleted
+[2026-04-21T01:30:03.119Z] INFO: Admin stats fetched
+[2026-04-21T01:30:51.553Z] ERROR: GET comments error: DB error
+[2026-04-21T01:30:51.564Z] INFO: Comment created on post post1
+[2026-04-21T01:30:51.567Z] INFO: Comment c1 updated
+[2026-04-21T01:30:51.572Z] INFO: Comment c1 updated
+[2026-04-21T01:30:51.575Z] INFO: Comment c1 deleted
+[2026-04-21T01:30:51.743Z] INFO: Admin stats fetched
+[2026-04-21T01:32:11.574Z] INFO: Admin stats fetched
+[2026-04-21T01:32:11.579Z] ERROR: GET comments error: DB error
+[2026-04-21T01:32:11.592Z] INFO: Comment created on post post1
+[2026-04-21T01:32:11.594Z] INFO: Comment c1 updated
+[2026-04-21T01:32:11.597Z] INFO: Comment c1 updated
+[2026-04-21T01:32:11.602Z] INFO: Comment c1 deleted
